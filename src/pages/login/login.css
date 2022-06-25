@@ -1,0 +1,137 @@
+.login__seeker {
+  width: 80vw !important;
+  height: 80vh !important;
+  display: flex !important;
+  position: relative !important;
+  /* box-shadow: rgb(118, 120, 122) 0px 20px 30px -10px !important; */
+}
+
+.login__seeker .header__logo {
+  position: absolute !important;
+  top: 10px !important;
+  right: 300px !important;
+}
+
+.login__seekerAside {
+  flex: 0.35 !important;
+  width: 350px !important;
+  max-width: 350px !important;
+  max-height: 100% !important;
+  overflow: hidden !important;
+}
+
+.login__seekerAside img {
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.login__seekerMain {
+  flex: 1 !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  padding: 30px 100px !important;
+  border-radius: 10px !important;
+  background-color: #fff !important;
+  box-shadow: rgb(118, 120, 122) 0px 20px 30px -10px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  overflow-y: auto !important;
+}
+
+.login__seekerMain h1 {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  color: #b000b9 !important;
+  margin-bottom: 15px !important;
+}
+
+.login__seekerMain h4 {
+  font-weight: 400 !important;
+  font-size: 1.4rem !important;
+  color: rgb(110, 110, 110) !important;
+}
+
+.login__seekerMain > p {
+  font-size: 0.85rem !important;
+  font-weight: 300 !important;
+  color: rgb(160, 160, 160) !important;
+  margin-bottom: 10px !important;
+}
+
+.login__seekerMain form {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-top: 10px !important;
+}
+
+.login__seekerMain form > div {
+  width: 550px !important;
+  gap: 15px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 0 5px !important;
+}
+
+.login__seekerMain form label {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  display: block !important;
+  color: #000 !important;
+}
+
+.login__seekerMain form .formInput {
+  width: 90% !important;
+  height: 35px !important;
+  border-radius: 5px !important;
+  border: 1px solid gray !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  outline-width: 1px !important;
+  border-width: 1px !important;
+}
+
+.login__seekerMain form .formInput:focus {
+  /* border: 1px solid #b000b9 !important; */
+  outline-width: 1px !important;
+  outline-color: #b000b9 !important;
+}
+
+.login__seekerMain form .form__footer {
+  width: 100% !important;
+  margin-top: 20px !important;
+}
+
+.form__footer > div:first-of-type {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-bottom: 20px !important;
+}
+
+.form__footer > div:first-of-type label {
+  font-size: 0.8rem !important;
+  font-weight: 300 !important;
+}
+
+.form__footer > div:last-of-type button {
+  padding: 10px 50px !important;
+  border-radius: 8px !important;
+  border: none !important;
+  cursor: pointer !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  background-color: rgb(57, 57, 194) !important;
+  margin-bottom: 8px !important;
+}
+
+.form__footer > div:last-of-type button:hover {
+  transition: all ease-in-out 0.25s !important;
+  background-color: rgb(117, 117, 199) !important;
+}
+
+.form__footer > div:last-of-type p {
+  font-size: 0.8rem !important;
+  font-weight: 300 !important;
+  color: #000 !important;
+}

@@ -1,0 +1,10 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background-color: transparent;
+  background-image: url("../../assets/Project_74-12.jpg");
+  background-position: 0;
+}

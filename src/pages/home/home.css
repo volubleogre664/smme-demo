@@ -1,0 +1,302 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+  background-color: transparent;
+  background-image: url("../../assets/Project_74-12.jpg");
+  background-position: 0;
+  background-origin: border-box;
+}
+
+.home * {
+  font-family: "Poppins", sans-serif;
+}
+
+.home__header {
+  padding: 5px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  max-height: 60px;
+  overflow: hidden;
+  z-index: 100;
+  background: rgba(255, 255, 255, 1);
+  /* -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); */
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.login__headerLogo {
+  margin-left: 50px;
+  margin-top: 19px;
+  /* display: flex;
+  align-items: center; */
+}
+
+.home__headerLogo img {
+  height: 100px;
+  object-fit: contain;
+  position: relative;
+  top: 5px;
+}
+
+.home__header nav {
+  width: fit-content;
+  display: flex;
+  gap: 20px;
+}
+
+.home__header nav a {
+  /* color: #000; */
+  text-decoration: none;
+}
+
+.home__header nav a:hover {
+  color: #b000b9;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.home__headerButtons {
+  display: flex;
+  gap: 5px;
+}
+
+.home__headerButtons .btn-login:hover {
+  transition: all ease-in-out 0.2s;
+  background-color: lightgray;
+  border: 1px solid #b000b9;
+}
+
+.home__headerButtons .btn-signIn {
+  border: 1px solid #b000b9;
+  font-weight: 500;
+  color: #b000b9;
+}
+
+.home__headerButtons .btn-signIn:hover {
+  transition: all ease-in-out 0.2s;
+  border: none;
+  background-color: #b000b9;
+  color: #fff;
+}
+
+.home__hero {
+  padding: 20px 5%;
+  display: grid;
+  place-items: center;
+  padding-bottom: 80px;
+}
+
+.home__heroMain {
+  margin-top: 50px;
+  padding: 40px;
+  width: fit-content;
+  max-width: 750px;
+  height: fit-content;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: rgb(118, 120, 122) 0px 20px 30px -10px;
+}
+
+.home__heroMain h1 {
+  color: #b000b9;
+  font-size: 3.7rem;
+  line-height: 3.7rem;
+  font-weight: 900;
+  text-shadow: rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.home__heroMain p {
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.95rem;
+  margin-top: 10px !important;
+  color: rgb(37, 37, 37);
+}
+
+.home__heroMain .acount__options {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.home__heroMain .acount__options .item {
+  width: 210px;
+  color: rgb(68, 68, 68);
+  background-color: rgba(248, 248, 248, 0.384);
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  cursor: pointer;
+  box-shadow: rgb(118, 120, 122) 0px 20px 30px -10px;
+}
+
+.home__heroMain .acount__options .item:hover {
+  transition: all ease-in-out 0.2s;
+  transform: scale(0.9);
+}
+
+.home__about {
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 80px 5%;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  height: 700px;
+}
+
+.home__aboutTitle {
+  font-weight: 900;
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(29, 7, 116);
+}
+
+.home__about h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: teal;
+  text-align: center;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.home__about > div {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home__about > div > .home__aboutImage {
+  width: 100%;
+  max-width: 550px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.home__about > div > .home__aboutImage > img {
+  width: 100%;
+}
+
+.home__about > div > .home__aboutPara {
+  flex: 1;
+  text-align: center;
+  height: max-content;
+  align-items: center;
+}
+
+.home__about > div > .home__aboutPara h3 {
+  font-weight: 400;
+  font-size: 3rem;
+  color: #b000b9;
+}
+
+.home__about > div > .home__aboutPara p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* The features starte here bro */
+#features {
+  height: auto !important;
+  padding-bottom: 30px !important;
+}
+
+#features > div {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#features > div > section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The footer starts here mate dont forget */
+
+.home__footer {
+  background-color: #e148e9;
+  color: #fff;
+  padding: 50px 5%;
+}
+
+.home__footer h2 {
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  /* color: teal; */
+  text-align: center;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.home__footer div {
+  width: 70%;
+  margin: auto;
+}
+
+.home__footer div h3 {
+  font-weight: 900;
+  font-size: 3rem;
+  color: rgb(29, 7, 116);
+  text-align: center;
+}
+
+.home__footer div p {
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.05rem;
+  color: rgb(252, 252, 252);
+}
+
+.home__footer div div {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+  justify-content: center;
+}
+
+.home__footer div div a {
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.home__footer div div a:hover {
+  transform: scale(0.95);
+}

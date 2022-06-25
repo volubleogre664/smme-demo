@@ -1,0 +1,39 @@
+.feature {
+  width: 300px;
+  height: auto;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.feature__header {
+  height: 150px;
+  overflow: hidden;
+}
+
+.feature__header img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.feature__main h4 {
+  margin-top: 8px;
+  font-weight: 800;
+  color: #b000b9;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.feature__main p {
+  font-weight: 300;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

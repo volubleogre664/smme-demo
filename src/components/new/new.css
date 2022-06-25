@@ -1,0 +1,217 @@
+.new {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  z-index: 101;
+}
+
+.new__main {
+  height: 85%;
+  width: 60%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 10px;
+  position: relative;
+  background: rgba(212, 209, 212, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: rgb(175, 179, 184) 0px 20px 30px -10px;
+}
+
+.new__main::-webkit-scrollbar {
+  background-color: transparent;
+  margin-right: 5px;
+  width: 15px;
+}
+
+.new__main::-webkit-scrollbar-thumb {
+  background-color: #b000b9;
+  border-radius: 20px;
+}
+
+.new__main .iconContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(48, 48, 48);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.new__main .iconContainer:hover {
+  transition: all ease-in-out 0.2s;
+  transform: scale(1.2);
+}
+
+.new__main h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  text-shadow: #b000b9 3px 3px;
+  width: 100%;
+  text-align: center;
+  max-width: 60%;
+}
+
+.new__main > P {
+  text-align: center;
+  font-weight: 300;
+  color: #000;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  max-width: 65%;
+  margin: auto;
+}
+
+.new__main form {
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.new__main form > .profileImage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: max-content;
+  margin: auto;
+  justify-self: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.new__main form > .profileImage > * {
+  width: fit-content;
+}
+
+.new__main form > .profileImage > label {
+  margin-bottom: 10px;
+}
+
+.new__main form > .profileImage .imageContainer > div:first-of-type {
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #b000b9;
+  box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+}
+
+.new__main form > .profileImage .imageContainer > .iconContainer {
+  background-color: rgb(255, 255, 255);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  top: unset;
+  right: 0;
+  bottom: -10px;
+}
+
+.new__main
+  form
+  > .profileImage
+  .imageContainer
+  > .iconContainer
+  .MuiSvgIcon-root {
+  color: #b000b9;
+  font-size: 2rem;
+}
+
+.new__main form > .profileImage .imageContainer > .iconContainer:hover {
+  transition: all ease-in-out 0.25s;
+  transform: scale(1.1);
+}
+
+.new__main form > .filter p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.new__main form > .filter > div {
+  display: flex;
+  align-items: center;
+}
+
+.new__main form > .filter > div label {
+  font-weight: 300;
+  margin-left: 5px;
+  font-size: 0.9rem;
+}
+
+.formInputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.formInputContainer > label {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.formInputContainer > input {
+  width: 90%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.formInputContainer .fileInput button {
+  margin-top: 8px;
+  color: #fff;
+  font-size: medium;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgb(0, 173, 173);
+}
+
+.formInputContainer .fileInput button:hover {
+  transition: all ease-in-out 0.25s;
+  background-color: rgb(0, 255, 255);
+  color: #000;
+  border-color: #000;
+}
+
+.new__main form > button {
+  padding: 10px;
+  font-size: medium;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: #b000b9;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.new__main form > button:hover {
+  transition: all ease-in-out 0.25s;
+  background-color: rgb(117, 117, 199);
+  color: #000;
+  border: 2px solid #000;
+}
